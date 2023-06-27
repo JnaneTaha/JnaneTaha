@@ -1,0 +1,128 @@
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header:hover {
+    color: rgb(red, green, blue);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 40px); /* Adjust the width as desired */
+    max-width: 400px; /* Adjust the maximum width as desired */
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .box img,
+  .box video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .box:hover .overlay {
+    opacity: 1;
+  }
+  
+  .box .overlay p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed,
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translate(20px, 50px);
+    text-decoration: underline double;
+  }
+  
+  section p {
+    text-transform: unset;
+  }
+  .video-box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .video-box video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-box:hover video {
+    transform: scale(1.1);
+  }
+  
+  .video-box .overlay {
+    display: none; /* Hide the overlay for videos */
+  }
+    
