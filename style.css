@@ -125,26 +125,28 @@ section p {
   flex-wrap: wrap;
 }
 .box{
-  box-shadow: inset 5px 2px 10px 10px #51b6db;
+  background: linear-gradient(to top,rgb(60, 188, 227),rgba(255, 255, 255, 0.525));
+  box-shadow: inset 5px 2px 10px 10px #ffffff;
 }
 .image-section .box {
     padding: 20px;
     background-color: #caf6fa;
     text-align: center;
     margin-bottom: 20px;
-    flex-basis: calc(50% - 40px); /* Adjust the width as desired */
+    flex-basis: calc(40% - 20px); /* Adjust the width as desired */
     max-width: 400px; /* Adjust the maximum width as desired */
   }
   
 
 .image-section .box img {
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
 }
 
 .image-section .box h1 {
   margin: 10px 0;
+  font-family:'Courier New', Courier, monospace
 }
 
 .image-section .box p {
@@ -204,7 +206,6 @@ footer {
   text-decoration: underline;
   text-transform: uppercase;
 }
-
 footer p {
   margin: 0;
 }
@@ -213,7 +214,9 @@ footer a {
   display: inline-block;
   margin-left: 10px;
 }
-
+footer a:hover{
+  color: black;
+}
 .contact-info {
   margin-top: 20px;
 }
@@ -291,8 +294,8 @@ header img{
   color: #17C3B2;
  }
  .box a {
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
+  box-shadow: inset 0 0 0 0 #fdfdfd;
+  color: #feffff;
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .5s ease-in-out, box-shadow .5s ease;
@@ -336,17 +339,19 @@ button:hover {
   transition: 500ms;
 }
 .pricing-area{
-  padding: 3% 0;
-  text-align: center;
+  padding: 5% 0;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
+  text-align: center;
+  display: inline-block;
+  margin-left: 100px;
 }
 .single-pricing{
   background: #fcfcfc;
-  box-shadow: rgba(17,12,46,0,15) 0 48px 100px 0;
-  transition: all .5s ease;
+  box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 20px;
+  transition: all 0.5s ease;
+  flex-basis: 90%; /* Make each pricing area take up the full width on smaller screens */
+  padding: 50px; /* Adjust the padding to create spacing within each pricing area */
+  margin-bottom: 50px; /* Add margin to create spacing between pricing areas */
 }
 .deal-type{
   background: linear-gradient(to bottom,rgba(40, 143, 233, 0.723),rgb(17, 237, 237));
@@ -394,6 +399,8 @@ button:hover {
 .btn:hover{
   color: blue;
   background: linear-gradient(to left,rgba(40, 143, 233, 0.723),rgb(17, 237, 237));
+  transform: .5s ease;
+  border-radius: 10px;
 }
 .single-pricing:hover{
   transform: scale(1.05);
@@ -402,4 +409,11 @@ button:hover {
   .single-pricing{
     margin-bottom: 30px;
   }
+}
+.Week{
+  font-family: monospace;
+  font-weight:1000 ;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
 }
