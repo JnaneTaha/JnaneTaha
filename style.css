@@ -1,7 +1,8 @@
 html{
+  scroll-snap-type: mandatory;
   scroll-behavior: smooth;
+  scroll-margin: 2px;
 }
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,15 +13,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.Title{
+  color: rgb(7, 91, 109);
+  box-shadow: inset 0px 5px 1px 0px #37e1f8;
+  padding-top: 20px;
+  text-rendering: optimizeLegibility;
 }
-
-
 header {
   padding: 20px;
   --u: 1.5vmin;
@@ -63,12 +61,14 @@ header {
 .Right:hover{
  transform: translate(30px,0)
 }
-header h1 {
+.Globe{
   margin: 0;
   text-overflow: var(--c3);
   text-emphasis: none;
   text-transform: capitalize;
   text-indent: 10px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Navigation */
@@ -92,9 +92,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #555555;
+  background-color: #e7dcdc;
 }
-
+.list{
+  font-size: larger;
+  text-decoration: dotted;
+  text-overflow: clip;
+  text-align: center;
+}
 /* Main content */
 main {
   padding: 20px;
@@ -120,11 +125,11 @@ section p {
   flex-wrap: wrap;
 }
 .box{
-  box-shadow: #54b3d6;
+  box-shadow: inset 5px 2px 10px 10px #51b6db;
 }
 .image-section .box {
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #caf6fa;
     text-align: center;
     margin-bottom: 20px;
     flex-basis: calc(50% - 40px); /* Adjust the width as desired */
@@ -183,14 +188,14 @@ section form textarea {
 
 section form button {
   padding: 8px 16px;
-  background-color: #333333;
+  background-color: #6976ec;
   color: #ffffff;
   border: none;
   cursor: pointer;
 }
 
 section form button:hover {
-  background-color: #555555;
+  background-color: #0515ac;
 }
 footer {
   background-color: #f2f2f2;
@@ -306,26 +311,26 @@ header img{
   height: 50px;
   width: 120px;
   border-radius: 0px;
-  background: #333;
+  background: #5fc0e6;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
-          box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  -webkit-box-shadow: -5px -5px 15px #6976ec, 5px 5px 15px #6976ec, inset 5px 5px 10px #6976ec, inset -5px -5px 10px #6976ec;
+          box-shadow: -5px -5px 15px #6976ec, 5px 5px 15px #6976ec, inset 5px 5px 10px #6976ec, inset -5px -5px 10px #6976ec;
   font-family: 'Damion', cursive;
   border: none;
   font-size: 16px;
-  color: rgb(161, 161, 161);
+  color: rgb(56, 175, 239);
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
 button:hover {
-  -webkit-box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-          box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  -webkit-box-shadow: -5px -5px 15px #6976ec, 5px 5px 15px #6976ec, inset 5px 5px 10px #6976ec, inset -5px -5px 10px #444;
+          box-shadow: -5px -5px 15px #6976ec, 5px 5px 15px #6976ec, inset 5px 5px 10px #6976ec, inset -5px -5px 10px #444;
   color: #d6d6d6;
   -webkit-transition: 500ms;
   transition: 500ms;
