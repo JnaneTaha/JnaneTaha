@@ -1,23 +1,42 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans:wght@900&family=Roboto:wght@300;700&display=swap');
 .Block{
+    padding: 80px;
+    width: 100%;
+    border: 2px solid ;
+	background:linear-gradient(To top,red, gold);
     text-align: center;
-    border: 5px solid black;
+    text-transform: capitalize;
+    
+		
+
 }
 body{
-    background-color: goldenrod;
+    background-color: rgb(242, 0, 0);
 }
 p{
     text-shadow: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Bungee', cursive;
     font-size: larger;
     font-weight: bolder;
     text-shadow: 10px;
     box-shadow: 2px;
+    font-size: 2em;
+    animation-name: Zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count:infinite;
+    transform: scale(2) 
+}
+@keyframes Zoom{
+    0%{transform:scale(0)};
+    50%{transform: scale(2)};
+    100%{transform:scale(1)};
 }
 a{
-    color: brown;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     border: 2px solid black;
     background-color: rgb(255, 157, 11);
@@ -25,8 +44,8 @@ a{
     text-decoration: none;
 }
 a:hover{
-    background-color: brown;
-    color: black;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     text-decoration-line: none;
 
 }

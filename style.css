@@ -323,7 +323,7 @@ header img{
           align-items: center;
   -webkit-box-shadow: -5px -5px 15px #6976ec, 5px 5px 15px #6976ec, inset 5px 5px 10px #6976ec, inset -5px -5px 10px #6976ec;
           box-shadow: -5px -5px 15px #6976ec, 5px 5px 15px #6976ec, inset 5px 5px 10px #6976ec, inset -5px -5px 10px #6976ec;
-  font-family: 'Damion', cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
   font-size: 16px;
   color: rgb(56, 175, 239);
@@ -350,7 +350,7 @@ button:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 20px;
   transition: all 0.5s ease;
   flex-basis: 90%; /* Make each pricing area take up the full width on smaller screens */
-  padding: 50px; /* Adjust the padding to create spacing within each pricing area */
+  padding: 10px; /* Adjust the padding to create spacing within each pricing area */
   margin-bottom: 50px; /* Add margin to create spacing between pricing areas */
 }
 .deal-type{
