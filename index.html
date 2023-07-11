@@ -5,8 +5,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="Images and videos/Opera Instantané_2023-06-26_161506_looka.com.png">
 
-    <style>
-      /* Responsive styles */
+    <style> 
+      @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
       @media screen and (max-width: 768px) {
         header h1 {
            font-size: 24px;
@@ -47,21 +47,63 @@
     <br>
       <section id="home">
         <br>
-        <h2 id="about" class="Title">About Us</h2><br><br>
-        <p style="text-indent: 20px;">Welcome to our rental pool located in the heart of Marrakech city! Our pool is surrounded by beautiful verdure, making it the perfect place to relax and unwind. We take pride in keeping our pool clean and well-maintained, so you can enjoy your time here to the fullest.</p>
-      </section><br>
-      <section id="facilities" >
-        <h2 class="Title">Facilities:</h2><br>
-        <ol type="1" class="list">
-          <li>Large pool</li>
-          <li>Beautiful verdure</li>
-          <li>House well equiped</li>
-          <li>Shower facilities</li>
-          <li>Sun loungers</li>
-          <li>Hammam Bldi</li>
-          <li>...</li>
-        </ol>
-      </section><br>
+        <div class="section">
+          <div class="rect" id="1">
+            <div class="content-">
+              <div class="image">
+                <img src="Images and videos/WhatsApp Image 2023-06-24 at 21.44.26 (4).jpeg" alt="">
+              </div>
+              <div class="text">Welcome to our rental pool located in the heart of Marrakech city!</div>
+            </div>
+          </div>
+          <div class="rect" id="2">
+            <div class="content-">
+              <div class="text">Our pool is surrounded by beautiful verdure, making it the perfect place to relax and unwind.</div>
+              <div class="image">
+                <img src="Images and videos/WhatsApp Image 2023-06-24 at 21.44.26 (2).jpeg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="rect" id="3">
+            <div class="content-">
+              <div class="image">
+                <img src="Images and videos/WhatsApp Image 2023-06-24 at 21.44.25 (1).jpeg" alt="">
+              </div>
+              <div class="text">We take pride in keeping our pool clean and well-maintained, so you can enjoy your time here to the fullest.</div>
+            </div>
+          </div>
+        </div>  
+       </div>
+       <section id="facilities"><br><br><br>
+        <h2 class="Title">Facilities:</h2>
+        <div class="facilities-list">
+          <div class="facility">
+            <div class="number">&#10133</div>
+            <div class="text">Large pool</div>
+          </div>
+          <div class="facility">
+            <div class="number">&#10133</div>
+            <div class="text">Beautiful verdure</div>
+          </div>
+          <div class="facility">
+            <div class="number">&#10133</div>
+            <div class="text">House well equipped</div>
+          </div>
+          <div class="facility">
+            <div class="number">&#10133</div>
+            <div class="text">Shower facilities</div>
+          </div>
+          <div class="facility">
+            <div class="number">&#10133</div>
+            <div class="text">Sun loungers</div>
+          </div>
+          <div class="facility">
+            <div class="number">&#10133</div>
+            <div class="text">Hammam Bldi</div>
+          </div>
+        </div>
+      </section>
+      <br><br><br><br><br><br>
       <section class="image-section">
         <div class="container">
           <div class="box">
@@ -96,8 +138,8 @@
           </div>
         </div>
       </section>
-      <section id="pricing">
-        <h2 class="Title">Price for Day Pass or Night:</h2>
+      <section id="pricing"><br><br><br><br>
+        <h2 class="Title">Price for Day Pass or Night:</h2><br><br>
          <div class="pricing-area">
           <div class="containerr">
             <div class="row">
@@ -151,7 +193,7 @@
                   <div class="deal-type">Week-End</div>
                   <div class="deal-amount">
                     <div class="price">
-                      <span class="money">1400<sup>dh</sup></span>
+                      <span class="money">1300<sup>dh</sup></span>
                       <h4>Day Price</h4>
                     </div>
                     <ul class="single-deal">
@@ -192,25 +234,27 @@
         <p><b>>>NB:  </b> These prices are applicable for a maximum group size of 10 persons; however, please note that the prices are subject to change at the discretion of the owner.</p>
         <br><br>
       </section>
-      <section>
-        <h2 class="Title">Contact Us</h2>
-        <form action="https://formsubmit.co/oasisjnantaha@gmail.com" method="post">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" placeholder="Full Name" required><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required placeholder="Valid Email"><br><br>
-          <label for="tel">Phone Number</label>
-          <input type="tel" id="tel" name="tel" required placeholder="Valid Phone number">
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" placeholder="Enter your feedback, advice,reproaches or make a reservation.Please add your phone number in the message section for us to contact you,Thanks!" required></textarea><br><br>
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New submission!">
-          <input type="hidden" name="_cc" value="oasisjnantaha@gmail.com">
-          <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-          <input type="hidden" name="_next" value="https://jnanetaha.github.io/JnaneTaha/Thanks.html">
-          <button type="submit">Send</button>
-        </form>
+      <section><br><br><br><br><br>
+       <div id="container"><br><br><br>
+         <h2 class="Title">Contact Us</h2>
+         <form action="https://formsubmit.co/oasisjnantaha@gmail.com" method="post">
+           <label for="name">Name:</label><br>
+           <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+           <label for="email">Email:</label><br>
+           <input type="email" id="email" name="email" required placeholder="Valid Email"><br><br>
+           <label for="tel">Phone Number</label>
+           <input type="tel" id="tel" name="tel" required placeholder="Valid Phone number">
+           <label for="message">Message:</label><br>
+           <textarea id="message" name="message" placeholder="Enter your feedback, advice,reproaches or make a reservation.Please add your phone number in the message section for us to contact you,Thanks!" required></textarea><br><br>
+           <input type="hidden" name="_template" value="table">
+           <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_subject" value="New submission!">
+           <input type="hidden" name="_cc" value="oasisjnantaha@gmail.com">
+           <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+           <input type="hidden" name="_next" value="https://jnanetaha.github.io/JnaneTaha/Thanks.html">
+           <button type="submit">Send</button>
+         </form>
+       </div>
     <br><br>
     <footer id="footer">
       <p>© Rental Pool "Jnane Taha" in Marrakech City.</p><br>

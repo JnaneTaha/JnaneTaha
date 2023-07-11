@@ -1,51 +1,31 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans:wght@900&family=Roboto:wght@300;700&display=swap');
-.Block{
-    padding: 80px;
-    width: 100%;
-    border: 2px solid ;
-	background:linear-gradient(To top,red, gold);
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredericka+the+Great&display=swap');
+.site-header__title{
+    font-family: 'Fredericka the Great', cursive;
+}
+.main-content__body{
+    font-family: 'Bangers', cursive;
+}
+.site-footer__fineprint{
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+a:link, a:visited {
+    background-color: #ffffff;
+    color: rgb(0, 251, 33);
+    padding: 14px 25px;
     text-align: center;
-    text-transform: capitalize;
-    
-		
-
-}
-body{
-    background-color: rgb(242, 0, 0);
-}
-p{
-    text-shadow: 2em;
-    font-family: 'Roboto', sans-serif;
-}
-h1{
-    font-family:'Bungee', cursive;
-    font-size: larger;
-    font-weight: bolder;
-    text-shadow: 10px;
-    box-shadow: 2px;
-    font-size: 2em;
-    animation-name: Zoom;
-    animation-duration: 1.5s;
-    animation-iteration-count:infinite;
-    transform: scale(2) 
-}
-@keyframes Zoom{
-    0%{transform:scale(0)};
-    50%{transform: scale(2)};
-    100%{transform:scale(1)};
-}
-a{
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    border: 2px solid black;
-    background-color: rgb(255, 157, 11);
-    border-radius: 20px;
     text-decoration: none;
-}
-a:hover{
-    background-color: rgb(255, 0, 0);
-    color: rgb(0, 0, 0);
-    text-decoration-line: none;
-
-}
+    display: inline-block;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: black;
+    box-shadow: inset 0px 0px 5px 2px #00ff7b;
+  }
+  
+  a:hover, a:active {
+    background-color: #00ff7b;
+  }
+  body{
+    background: rgb(0,191,255);
+background: radial-gradient(circle, rgba(0,191,255,1) 6%, rgba(0,255,167,1) 100%);
+  }

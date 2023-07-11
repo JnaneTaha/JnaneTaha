@@ -13,12 +13,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.Title{
-  color: rgb(7, 91, 109);
-  box-shadow: inset 0px 5px 1px 0px #37e1f8;
-  padding-top: 20px;
-  text-rendering: optimizeLegibility;
-}
 header {
   padding: 20px;
   --u: 1.5vmin;
@@ -50,16 +44,20 @@ header {
 
 }
 .Left{
-  transition: transform 1s ease;
+  transition: transform .5s ease;
 }
 .Left:hover{
- transform: translate(-30px,0);
+ transform: scale(1.2);
+ background-color:whitesmoke;
+ color: black;
 }
 .Right{
-  transition: transform 1s ease;
+  transition: transform .5s ease;
 }
 .Right:hover{
- transform: translate(30px,0)
+  transform: scale(1.2);
+  background-color:whitesmoke;
+  color: black;
 }
 .Globe{
   margin: 0;
@@ -100,7 +98,94 @@ nav ul li a:hover {
   text-overflow: clip;
   text-align: center;
 }
-/* Main content */
+.section{
+  display: grid;
+  grid: 20px;
+  align-items: center;
+}
+.rect {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rect .content- {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rect #1 .content- {
+  flex-direction: row;
+}
+
+.rect #2 .content- {
+  flex-direction: row-reverse;
+}
+
+.rect .image {
+  flex: 0 0 50%;
+  margin-right: 20px;
+}
+
+.rect .image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 450px;
+  border-radius: 10px;
+}
+
+.rect .text {
+  flex: 1;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.content-{
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+#facilities {
+  text-align: center;
+}
+
+.Title {
+  font-size: 58px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-family: 'Bangers', cursive;
+
+}
+
+.facilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.facility {
+  width: 200px;
+  height: 100px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.facility:hover {
+  transform: scale(1.1);
+}
 main {
   padding: 20px;
 }
@@ -272,9 +357,10 @@ h2{
   text-align: center;
 }
 header img{
-  width: 120px;
+  width: 100px;
   height: 100px;
   display: block;
+  margin-right: 20px;
 }
 
 
@@ -416,4 +502,7 @@ button:hover {
   font-size: 30px;
   text-align: center;
   text-decoration: underline;
+}
+#container{
+  border:5px solid rgba(85, 176, 255, 0.723)
 }
