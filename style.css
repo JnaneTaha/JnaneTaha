@@ -506,3 +506,7 @@ button:hover {
 #container{
   border:5px solid rgba(85, 176, 255, 0.723)
 }
+.location{ 
+  display: flex; 
+  justify-content: center;
+}
