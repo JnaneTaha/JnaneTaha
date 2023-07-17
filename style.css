@@ -13,6 +13,12 @@ body {
   margin: 0;
   padding: 0;
 }
+.main{
+  background-image:url("Images and videos/5298525.jpg");
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: 2; /* Specify if the image should repeat */
+  background-position: center;
+}
 header {
   padding: 20px;
   --u: 1.5vmin;
