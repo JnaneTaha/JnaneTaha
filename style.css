@@ -492,11 +492,172 @@ button:hover {
 .single-pricing:hover{
   transform: scale(1.05);
 }
-@media (max-width:767px){
-  .single-pricing{
+/* Add the following code at the end of your CSS */
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+    height: auto;
+  }
+
+  header .logo {
+    width: auto;
+  }
+
+  header .logo img {
+    width: 20px;
+    height: 20px;
+  }
+
+  header .logo h1 {
+    font-size: 18px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .Left,
+  .Right {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .Globe {
+    font-size: 24px;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .rect .content- {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rect .image {
+    margin-bottom: 10px;
+  }
+
+  .rect .text {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .Title {
+    font-size: 36px;
+  }
+
+  .facilities-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .facility {
+    flex: 0 0 80px;
+    margin: 10px 5px;
+    font-size: 14px;
+  }
+
+  .image-section .box {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .image-section .box img {
+    width: 100%;
+    height: auto;
+  }
+
+  section table th,
+  section table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  section form label {
+    font-size: 12px;
+  }
+
+  section form input,
+  section form textarea {
+    font-size: 12px;
+  }
+
+  section form button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .contact-info img {
+    width: 16px;
+  }
+
+  .social-logo {
+    width: 16px;
+    height: 16px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+
+  .box a {
+    font-size: 12px;
+    padding: 0.15rem;
+  }
+
+  button {
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .pricing-area {
+    padding: 5% 0;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-pricing {
+    flex-basis: 100%;
     margin-bottom: 30px;
   }
+
+  .deal-type {
+    font-size: 16px;
+  }
+
+  .price .money {
+    font-size: 40px;
+  }
+
+  .single-deal li {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+  }
 }
+
+/* Location Styles */
+
+
+
 .Week{
   font-family: monospace;
   font-weight:1000 ;

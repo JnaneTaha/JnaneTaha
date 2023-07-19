@@ -48,6 +48,7 @@ p{
     margin: 20px;
     height: auto;
     overflow: hidden;
+    justify-content: center;
     display: block;
     align-items: center;
     justify-content: space-between;
@@ -61,11 +62,13 @@ button{
 #IMAGE1,
 #IMAGE2,
 #IMAGE3{
-    object-fit: cover;
+    object-fit: contain;
     max-width: 100%;
     width: 100%;
     padding: 0;
     margin: 0%;
+    height: 100%;
+    max-height: 100%;
     justify-content: space-between;
 }
 .tip{
@@ -77,26 +80,134 @@ button{
   width: 100px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 } 
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 700px;
-  grid-template-columns: auto auto auto auto;
-  flex-wrap: nowrap;
-  grid-gap: 20px;
-  padding: 0px;
-  overflow-x: scroll;
-  background-color: #f2f2f2;
-}
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-right: 5px;
-  border-radius: 5px;
+.slide {
+  max-width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Add the following code at the end of your CSS */
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .conntent {
+    width: 100%;
+    margin: 10px;
+    box-shadow: rgba(5, 108, 233, 0.19) 3px 6px 30px, rgba(0, 0, 0, 0.23) 4px 4px 6px;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .image-container img {
+    margin-right: 3px;
+    border-radius: 3px;
+  }
+  
+  .button-89 {
+    font-size: 18px;
+    min-width: 120px;
+  }
+  
+  .note {
+    font-size: 20px;
+  }
+  
+  article {
+    background-size: auto;
+    background-position: top;
+  }
+  
+  main {
+    background-size: auto;
+    background-position: top;
+  }
+  
+  .wrapper {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .back {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon svg {
+    width: 18px;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+  }
+  
+  footer {
+    padding: 10px;
+    font-size: smaller;
+  }
+  
+  .contact-info img {
+    width: 16px;
+  }
+  
+  .social-logo {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+  }
+}
+
+
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform .5s ease-in-out;
+  
+}
+.image-container img {
+  object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.BTN{
+  position: absolute;
+  top: 50%;
+  color: gainsboro;
+  font-size: 45px;
+  transform: translateY(-50%);
+  opacity: .5;
+  transition:.5s ease ;
+  cursor: pointer;
+}
+.BTN:hover{
+  opacity: 1;
+}
+.BTN.LEFT{
+  left: 10px;;
+}
+.BTN.RIGHT{
+  right: 10px; 
+}
 #pop-up-room,
 #pop-up-garden,
 #pop-up-pool{
@@ -277,19 +388,14 @@ main{
 }
 .close{
   border: none;
-  background: linear-gradient(45deg, #bbff00, #ffe100); /* Adjust the gradient colors */
-  width: 80px;
-  font-weight: 600;
-  padding: 10px;
-  text-transform: uppercase;
-  border-radius: 20px;
-  transition: all 0.35s ease-in;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
 } 
 .close:hover{
-  color: #000000;
-  width:100px;
-  background: linear-gradient(to right,orange,yellow);
+  color: #ff0000;
 }
 footer {
   background-color: #f2f2f2;
